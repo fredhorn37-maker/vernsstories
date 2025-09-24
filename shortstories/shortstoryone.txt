@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav p{
+font-size: 25px;
+color: #ffffff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ff33cc;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div class="main"><img src=".\Image Folder\1BigE.jpg" width="1600" height="500"></div>
+<div class="main">Vern's Stories  fredhorn37@gmail.com</div>
+<div class="main"><h3>Meeting With God</h3>
+ <p>Vern was sitting staring at his laptop computer screen. He had been working most of the day on a quote to a potential client.<br>
+
+He had done all the calculations and figured product pricing and tax and shipping. 
+
+Now he was just figuring the best way to present it to the customer.<br><br>
+
+He preferred the straightforward method. Talk to the  customer, sell him the stuff right now, no having to write up a quote. But, the employer he worked for didn't always let him do that.
+
+Gotta have records don't ya know.<br><br>
+
+Anyway, he saved the file and emailed it to his supervisor. He was going up for his monthly sales meeting tomorrow and would answer any questions she had then.
+
+Now, he could finish his plans for tomorrow night. He had taken a single shot 22 caliber scout rifle that had a wood stock and cut the stock down. Then he had removed the forearm and shortened the barrel to 10 inches. 
+
+He had setup a small range in his living room, and he made a setup to resemble the seating in his pickup. <br><br>
+
+He sat down, pantomimed rolling down the window, and fired the 22 caliber short round at the target. He did this about 10 times. He hit the eyeball he had drawn on the head shaped target 7 times out of 10. And right next to the eyeball on the other 3. He decided he was ready.
+
+Vern had not used hearing protection. He was trying to gauge the loudness, but it was difficult being in an enclosed room. He was worried the shot might be loud enough to attract attention, and that he did not want.<br><br>
+
+The next morning he woke at 5am, rapidly dressed and loaded his truck, and headed for the gas station to get the breakfast of champions: a french roast black coffee that was almost hot enough to drink, and a package of chocolate mini donuts. MMM MMM Good! <br><br>
+
+On the road for the 3 hour drive north, everything was uneventful. He was a little nervous having the shortened rifle in his center console with the 5 rounds of rimfire ammo. Didn't know if he could explain that to the highway cops. So this morning, he buckled his seatbelt, to avoid an unwanted stop.
+
+He had checked the internet forum last night before bed, and Salazar was still scheduled to be in the downtown restaurant at 6pm. Vern had memorized directions to get there and had traced out evacuation routes from the restaurant to the freeway. He had three exfil routes in mind.<br><br>
+
+Salazar was a piece of shit, and didn't deserve to live. Vern thought he might help with that.
+
+Salazar was a state assemblyman from the southern part of the state. He liked to write and submit gun control laws. And he was pretty good at getting some of the others to support him. He liked to go on tv and radio and degrade gunowners. He loved to tell lies about mass shootings and how banning firearms would be so much better for us. But Vern figured enough was enough. And a lowly 22 short should do the trick. Kind of ironic he thought. Getting taken down by the very thing the guy hated.<br><br>
+
+He arrived at his meeting about 8:30, and the day progressed normally. The morning was filled with a training class, the afternoon with sales stuff.
+
+About 3pm, his supervisor said it was getting late and you best get on the road Vern before traffic gets really bad!<br><br>
+
+On the road again, find the freeway exit to home, but instead Vern turns north. 
+
+Arriving at the state capitol at 5:15 pm Vern follows his memorized directions to the restaurant. Then he drives around for a few minutes checking out his exfil route. He decides on one, then two, then the third one. Now that's done, he hopes to find a parking place.
+
+Nearing the restaurant he spies a place, but it is a little further than he hoped to be from the entrance. He parks, dons a black covid face mask, puts on his wraparound sunglasses, gets out, then slowly paces the distance from truck to the entrance.  Once there he walks on by to a small mom and pop type store a few doors down.
+
+Entering, he purchased a cold drink and a prepackaged egg salad sandwich.(If caught he intends to make his captors miserable.) Not as good as the fare Salazar intends to eat, but it will do.<br><br>
+
+On the way back to the truck he notices his rear license plate. He had removed it at a rest stop earlier, and screwed on the plate he had gotten from Amazon. Kind of ironic, the plate said All Lives Matter. Vern thought maybe Salazar's didn't.
+
+Looking at his watch he saw it was about 5 minutes until 6 pm. Glancing around, he thought he saw Salazar approaching from the west side of the restaurant entrance. That would make the shot about 45 feet for him. That was 15 feet farther than his range at home. He crossed his fingers.<br><br>
+
+He confirmed it was Salazar. Carefully he picked up the shortened rifle and took aim thru the window. No one was by his truck and had not seen anyone looking out of the business he was parked in front of. 
+
+Hold slightly above the eye.5,4,3,2,1. Pop. The shot was dead on thru the left eyeball. Salazar dropped like a rock. The people with him had not heard the shot. They were crowding around Salazar and at least one of them was on the phone, presumably calling 911.<br><br>
+
+Vern carefully placed the rifle back in the center console, and nervously looked around to see if anyone had heard the shot. Luckily, no one had, so he fired up the truck, backed out and headed for evacuation route number one.
+
+He looked out the window at the activity across the street as he went by, but could not tell anything.
+
+He managed to make the freeway even though his hands were shaking badly. He wanted to stop and throwup, but he powered his way thru it and did not. <br><br>
+
+Getting up to speed, he placed the truck on cruise control. About 20 miles down the way he turned off onto a service road, and then down that road he found another road going off into the country. Driving down that way he eventually found what he thought was a suitable spot. Stopping, he got a small foldable shovel out of his toolbox and dug a hole about one foot deep and placed the rifle and remaining shells there and filled it back in. 
+
+Taking a few more minutes he traded license plates with his real one. A vehicle was coming down the road. As it got near, Vern stepped to the opposite side of the truck, unzipped his pants, and let fly. The oncoming car honked at him and he could hear feminine laughter floating back his way. Grinning, he finished up.<br><br>
+
+Returning to the freeway, he headed home. And in his mind he was thinking about next months meeting. He thought that lockdown king State Senator Albert Johnson might be due for a meeting with God.</p></div><hr><hr>
+
+<div class="sidenav">
+  <p>Links</p>
+  <a href="https://ninetymilesfromtyranny.blogspot.com/" target="_blank">90 Miles from Tyranny</a>
+  <a href="https://bustednuckles.com/" target="_blank">Busted Nuckles</a>
+  <a href="https://commoncts.blogspot.com/" target="_blank">Common Cents</a>
+  <a href="https://johnsimonds.com/" target="_blank">John Simonds</a>
+  <a href="https://eatonrapidsjoe.blogspot.com/" target="_blank">Eaton Rapids Joe</a>
+  <a href="https://extexanwannabee.wordpress.com/" target="_blank">ExTexanWannabe</a>
+  <a href="https://funnypix.altervista.org/" target="_blank">FunnyPix</a>
+  <a href="https://elmtreeforge.blogspot.com/" target="_blank">Irons in the Fire</a>
+  <a href="https://sondraksgulch.com/" target="_blank">SondraK</a>
+  <a href="https://proof-proofpositive.blogspot.com/" target="_blank">Proof Positive</a>
+  <a href="https://sratchingtoescape.blogspot.com/" target="_blank">Scratching to Escape</a>
+  <a href="https://theferalirishman.blogspot.com/" target="_blank">Feral Irishman</a>
+  <a href="https://www.thegatewaypundit.com/" target="_blank">Gateway Pundit</a>
+  <a href="https://theviewfromladylake.blogspot.com/" target="_blank">View from Lady Lake</a>
+  <a href="https://bustednuckles.blogspot.com/" target="_blank">The Vulgar Curmudgeon</a>
+  
+</div>
+
+
+   
+</body>
+</html> 
+
+
+<div class="sidenav">
+  <p>Links</p>
+  <a href="https://ninetymilesfromtyranny.blogspot.com/" target="_blank">90 Miles from Tyranny</a>
+  <a href="https://bustednuckles.com/" target="_blank">Busted Nuckles</a>
+  <a href="https://commoncts.blogspot.com/" target="_blank">Common Cents</a>
+  <a href="https://johnsimonds.com/" target="_blank">John Simonds</a>
+  <a href="https://eatonrapidsjoe.blogspot.com/" target="_blank">Eaton Rapids Joe</a>
+  <a href="https://extexanwannabee.wordpress.com/" target="_blank">ExTexanWannabe</a>
+  <a href="https://funnypix.altervista.org/" target="_blank">FunnyPix</a>
+  <a href="https://elmtreeforge.blogspot.com/" target="_blank">Irons in the Fire</a>
+  <a href="https://sondraksgulch.com/" target="_blank">SondraK</a>
+  <a href="https://proof-proofpositive.blogspot.com/" target="_blank">Proof Positive</a>
+  <a href="https://sratchingtoescape.blogspot.com/" target="_blank">Scratching to Escape</a>
+  <a href="https://theferalirishman.blogspot.com/" target="_blank">Feral Irishman</a>
+  <a href="https://www.thegatewaypundit.com/" target="_blank">Gateway Pundit</a>
+  <a href="https://theviewfromladylake.blogspot.com/" target="_blank">View from Lady Lake</a>
+  <a href="https://bustednuckles.blogspot.com/" target="_blank">The Vulgar Curmudgeon</a>
+  
+</div>
+
+
+   
+</body>
+</html> 
