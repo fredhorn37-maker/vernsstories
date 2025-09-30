@@ -37,7 +37,7 @@ color: #ffffff;
 
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
@@ -56,9 +56,45 @@ color: #ffffff;
 <div class="main"><img src=".\Image Folder\1BigE.jpg" width="1600" height="500"></div><hr><hr>
 
 <div class="main">
+<p style="font-size: 15px;">Posted by Fred Horn 9-30-25 5:15PM</p>
+<p style="font-size: 25px;">Megyn Kelly on Pete Hegseth</p>
+<iframe width="547" height="973" src="https://www.youtube.com/embed/I9c145WF71c" title="&quot;I Love Him!&quot;: Megyn Kelly Praises Pete Hegseth&#39;s Powerful Message to Military Leaders" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h4>Please add a comment</h4>
+    <div id="comment-container">
+        <!-- Existing comments will go here -->
+    </div>
+    <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+    <br>
+    <button id="btn-post">Post</button>
+    <script>
+        // JavaScript code will go here
+// Step 1: Add an event listener to the "Post" button
+document.getElementById("btn-post").addEventListener("click", function () {
+    // This line sets up an event listener for the click event on the "Post" button.
+    // When the button is clicked, the function provided as the second argument will run.
+
+    // Step 2: Get the comment from the textarea
+    const newComment = document.getElementById("new-comment").value;
+
+    // Step 3: Create a new paragraph element for the comment
+    const commentContainer = document.getElementById("comment-container");
+    const commentElement = document.createElement("p");
+    commentElement.innerText = newComment;
+
+    // Step 4: Append the comment to the comment container
+    commentContainer.appendChild(commentElement);
+
+    // Clear the textarea after posting the comment
+    document.getElementById("new-comment").value = "";
+});
+    </script>
+<div><hr><hr>
+
+<div class="main">
 <p style="font-size: 15px;">Posted by Fred Horn 9-30-25 12:30PM</p>
 <p style="font-size: 25px;">Pete Hegseth Says We Are Returning to High Male Standards</p>
 <iframe width="547" height="973" src="https://www.youtube.com/embed/Qai3u6GLaZM" title="Megyn Kelly Reacts to Sec. Pete Hegseth Calling Out &quot;Fat&quot; Generals and Troops in Major Address" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </div><hr><hr>
 
 
@@ -76,6 +112,8 @@ The article says about 275,000 people will lose their jobs. <br><br>
 That's a lot of jobs. I wonder how many of those will be looking to replace those jobs.<br><br>
 
 Now don't get me wrong, reducing government is a very good thing. I just hope government doesn't have to bail a bunch of them out while they whine they can no longer work.
+
+
 </div><hr><hr>
 
 <div class="main" style="font-size: 15px;">Posted by Fred Horn 9-30-25 9:00AM</p>
@@ -98,6 +136,7 @@ Federal workers would bear the brunt of the shutdown. Hundreds of thousands coul
 Given the current impasse and the administration’s willingness to accept a shutdown as a tool for reducing the federal workforce, the situation represents a more serious and potentially longer-lasting crisis than previous budget standoffs.<br><br>
 
 Fuck the .gov.</p>
+
 </div><hr><hr>
 
 <div class="main" style="font-size: 15px;">Posted by Fred 9-30-25 8:30AM</p>
