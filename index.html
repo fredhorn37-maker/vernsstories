@@ -3,84 +3,100 @@
 <head>
 
   <title>Vern's Stories</title>
-  <link rel="icon" type="image/x-icon" href="./Image Folder/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./imagefolder/favicon.ico">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-div {
-    background-color: #dfdfe7;
-}
-body {
-  font-family: "Lato", sans-serif;
-}
-.sidenav p{
-font-size: 25px;
-color: #ffffff;
-}
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+/* grid container */
+.verns-blog-grid {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'main-content'
+        'left-sidebar'
+        'right-sidebar'
+        'footer';
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
+/* general column padding */
+.verns-blog-grid > * {
+    padding:1rem;
 }
 
-.sidenav a:hover {
+/* assign columns to grid areas */
+.verns-blog-grid > .header {
+    grid-area:header;
+    background:#f97171;
+}
+.verns-blog-grid > .main-content {
+    grid-area:main-content;
+    background:#fff;
+}
+.verns-blog-grid > .left-sidebar {
+    grid-area:left-sidebar;
+    background:#D3D3D3;
+	font-size: 25px;
+	color: red;
+}
+.verns-blog-grid> .left-sidebar a:hover {
   color: #ff33cc;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+.verns-blog-grid > .right-sidebar {
+    grid-area:right-sidebar;
+    background:#D3D3D3;
+}
+.verns-blog-grid > .footer {
+    grid-area:footer;
+    background:#72c2f1;
 }
 
-@media only screen and (max-width:800px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .verns-blog-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'header header'
+            'main-content main-content'
+            'left-sidebar right-sidebar'
+            'footer footer';
+    }
 }
-img {
+
+/* desktop breakpoint */
+@media (min-width:1024px) {
+    .verns-blog-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'header header header header'
+            'left-sidebar main-content main-content right-sidebar'
+            'footer footer footer footer';
+    }
+}
+
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-
-
+  width: 75%;
 </style>
 </head>
-<body>
-<div class="main"><img src=".\Image Folder\1BigE.jpg" width="1600" height="500"></div><hr><hr>
 
-<div class="main">
-  <p style="font-size: 20px;">Hello everyone, thanks for stopping by. This site will eventually be my permanent blog called Vern's Stories.<br>
+<body>
+<div class="verns-blog-grid">
+    <header class="header"><img src="imagefolder\chemtrails1.jpg" width="1600" height="450" class="center"></header>
+   
+
+   <main class="main-content">
+   <div class="main-content"> 
+   <p style="font-size: 20px;">Hello everyone, thanks for stopping by. This site will eventually be my permanent blog called Vern's Stories.<br>
   At the moment I do not have the means to take comments like the other site does.<br>
   However, if you will email your comments to: <b><i>vernellis51@gmail.com</i></b> I will publish them here.<br>
   I will in the future be able to accept comments, I just haven't figured out how to do that yet.<br>
   And one last thing: **** Blogger.</p>
-</div><hr><hr>
-
-<div class="main">
+  </div><hr><hr>
+   
+   <div class="main-content">
   <p style="font-size: 15px;">Posted by Vern Ellis 10-16-25 Noon PM</p>
   <p style="font-size: 23px;"><b>PGE is Raising Their Damn Rates Again</b></p>
   <a href="https://www.publicadvocates.cpuc.ca.gov/press-room/commentary/250423-pge-seeks-another-multi-billion-dollar-rate-increase" target="_blank">
@@ -89,23 +105,18 @@ img {
   2027-2030 they want <em>another</em> 4.5 billion. <em>Assholes.</em>
 </div><hr><hr>
 
-
-
-
-<div class="main">
+<div class="main-content" style="text-align: center">
   <p style="font-size: 15px;">Posted by Vern Ellis 10-16-25 7:15AM</p>
   <p style="font-size: 23px;"><b>MidWeek Memes</b></p>
-  <img src=".\Image Folder\oct2025\10-16-25\one.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-16-25\two.jpg" style="width: 25%"><br>
-  <img src=".\Image Folder\oct2025\10-16-25\three.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-16-25\four.jpg" style="width: 25%"><br>
-  <img src=".\Image Folder\oct2025\10-16-25\five.jpg" style="width: 25%">
+  <img src=".\imagefolder\oct2025\10-16-25\one.jpg" style="width: 50%" ><br>
+  <img src=".\imagefolder\oct2025\10-16-25\two.jpg" style="width: 50%" ><br>
+  <img src=".\imagefolder\oct2025\10-16-25\three.jpg" style="width: 50%" ><br>
+  <img src=".\imagefolder\oct2025\10-16-25\four.jpg" style="width: 50%" ><br>
+  <img src=".\imagefolder\oct2025\10-16-25\five.jpg" style="width: 50%" >
 </div><hr><hr>
 
 
-
-
-<div class="main">
+<div class="main-content">
   <p style="font-size: 15px;">Posted by Vern Ellis 10-15-25 11:40AM</p>
   <p style="font-size: 23px;"><b>In November, Food Stamp Money Will Run Out For 42 Million Very Angry Americans</b></p>
   <a href="https://theeconomiccollapseblog.com/we-want-our-entitlements-in-november-food-stamp-money-will-run-out-for-42-million-very-angry-americans/"   target="_blank"><span style="color: red; font-size: large;"><b><i>“We Want Our Entitlements”</i></b></span></a></p>
@@ -120,458 +131,68 @@ Millions of americans and illegal aliens alike are not gonna get their "free" mo
 Maybe nothing. But more likely we are gonna see a whole bunch more people in the streets throwing bricks & flaming bottles.
 
 Thanksgiving might be a little different this year.</p>
-<img src=".\Image Folder\oct2025\10-15-25\image.png" style="width: 25%">
+<img src=".\imagefolder\oct2025\10-15-25\image.png"  style="width: 35%">
 </div><hr><hr>
 
 
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-15-25 7:15AM</p>
-  <p style="font-size: 23px;"><b>Wednesday Memes</b></p>
-  <img src=".\Image Folder\oct2025\10-15-25\one.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-15-25\two.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-15-25\three.jpg" style="width: 25%"><br>
-  <img src=".\Image Folder\oct2025\10-15-25\four.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-15-25\five.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-15-25\six.jpg" style="width: 25%">
-</div><hr><hr>
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-12-25 9:00PM</p>
-  <p style="font-size: 23px;"><b>I Guess His Alarm Wasn't Set</b></p>
-<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F796702899758487%2F&show_text=false&width=366&t=0" width="366" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-</div><hr><hr>
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-11-25 11:45AM</p>
-  <p style="font-size: 20px;"><b>According to CNN, Democrats are willing to keep the government shut down for several more 
-  weeks if Republicans do not give in and give illegal aliens healthcare.</b></p>
-  <a href="https://www.blogger.com/blog/post/edit/2307322303758388123/99921229580906254" target="_blank">
-  <span style="color:red" font-size: 25px"><b><i>
-“Congressional Democrats are privately preparing to hold their position in the shutdown standoff for several more weeks if Republicans do not agree to their health care demands – and not even a missed paycheck for US troops will force them to yield,” CNN reported.</b></i></a>
-
-  <p>Fuck the goddamn democrats.<br>
-
-  I don't much give a shit if the fed .gov stays shutdown forever, but illegal aliens won't get another damn dime of my money if I have a say in it.<br>
-
-  Goddamn democrats suck big donkey balls.</p>
-</div><hr><hr>
-
-
-
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-11-25 8:50AM</p>
-  <p style="font-size: 20px;"><b>I would go further than this.</b></p>
-  <img src=".\Image Folder\oct2025\10-11-25\one.jpg" style="width: 25%"><br>
-<p>Piss on the pay bullshit. I read a meme here a while back that said if the government shuts down, prohibit all of members of congress from running for re-election.
-
-Now THAT I agree with. But I would go further. Piss on this shutdown, make the law to prohibit running for congress if they don't pass a BUDGET. Not a continuing resolution, but an actual budget.
-
-Assholes, the bunch of em.</p>
-</div><hr><hr>
-
-
-
-
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-10-25 10:15AM</p>
-  <p style="font-size: 20px;"><b>Friday Morning Memes</b></p>
-  <img src=".\Image Folder\oct2025\10-10-25\one.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-10-25\two.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-10-25\three.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-10-25\four.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-10-25\five.jpg" style="width: 25%">
-  <img src=".\Image Folder\oct2025\10-10-25\six.jpg" style="width: 25%">
-</div><hr><hr>
-
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-9-25 12:45PM</p>
-  <p style="font-size: 20px;"><b>Gotta Be Careful Flying Overseas These Days</b></p>
-  <p>Holy smokes. Delta has a crazy credit card rule that says you can't get your boarding passes unless you show them the credit card used to purchase your tickets.<br>
-  And what if someone else does that for you? What then?</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/GXYEFy-3fwk?si=qJcUUqVkoGU-Seyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div><hr><hr>
-
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-9-25  8:00AM</p>
-  <p style="font-size: 20px;"><b>Good Morning Memes</b></p>
-  <img src=".\Image Folder\oct2025\10-8-25\one.jpg" style="width: 25%"><br><br>
-  <img src=".\Image Folder\oct2025\10-8-25\two.jpg" style="width: 25%"><br><br>
-  <img src=".\Image Folder\oct2025\10-8-25\three.jpg" style="width: 25%"><br><br>
-  <img src=".\Image Folder\oct2025\10-8-25\four.jpg" style="width: 25%">
-</div><hr><hr>
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-7-25  3:25pm</p>
-  <p style="font-size: 20px;"><b>Tuesday Afternoon Memes</b></p>
-  <img src=".\Image Folder\oct2025\10-7-25\five.jpg" style="width: 25%"><br>
-  <img src=".\Image Folder\oct2025\10-7-25\six.jpg" style="width: 25%"><br>
-  <img src=".\Image Folder\oct2025\10-7-25\seven.jpg" style="width: 20%"><br>
-  <img src=".\Image Folder\oct2025\10-7-25\eight.jpg" style="width: 25%">
-</div><hr><hr>
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-7-25 9:05AM</p>
-  <p style="font-size: 25px;"><b>Tuesday Morning Memes</b></p>
-  <img src=".\Image Folder\oct2025\10-7-25\one.jpg" width="450" height="450"><br>
-  <img src=".\Image Folder\oct2025\10-7-25\two.jpg" width="450" height="450"><br>
-  <img src=".\Image Folder\oct2025\10-7-25\three.jpg" width="450" height=450"><br>
-  <img src=".\Image Folder\oct2025\10-7-25\four.jpg" width="450" height="450">
-</div><hr><hr>
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-6-25 2:20PM</p>
-  <p style="font-size: 25px;"><b>If These Elitist Asshats Don't Follow the Law, Why Should You and I???</b></p>
-  <p><a href="https://www.thegatewaypundit.com/2025/10/breaking-senior-prosecutor-eastern-district-virginia-is-refusing/" target="_blank"><span style="color: red; font-size: large;"><b><i>Senior Prosecutor in the Eastern District of Virginia Refuses to Charge Corrupt NY Attorney General Letitia James</i></b></span></a></p><p><span style="font-size: large;">I am confused.</span></p><p><span style="font-size: large;">Isn't tish james charged with doing THE EXACT SAME THING that they charged President Trump with doing??</span></p><p><span style="font-size: large;">And he supposedly got convicted of it?</span></p><p><span style="font-size: large;">Then why in the blue hell is this twunt of a prosecutor not charging tish james???</span></p><p><br /></p>
-</div><hr><hr>
-
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-6-25 4:50AM</p>
-  <p style="font-size: 25px;"><b>Do You Remember These?</b></p>
-  <img src=".\Image Folder\oct2025\10-6-25\one.jpg" style="width: 30%">
-</div><hr><hr>
-
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-5-25 8:10PM</p>
-  <p style="font-size: 20px;">Federal Judge Halts Pres. Trump's Deployment of National Guard to Portland. Pres. Trump Says, "Hold My Beer!"</p>
-  <p style="font-size: 20px;">HA! I bet ole newscum shit a golden brick when he heard about this! HA!</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/1wa4cPwR22I?si=iHzshNvvzNjEXzlL" title="YouTube video player" frameborder="0" allow="accelerometer;   autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div><hr><hr>
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-5-25 10:05AM</p>
-  <p style="font-size: 20px;">The Word Left is Wrong!!</p>
-<iframe width="547" height="973" src="https://www.youtube.com/embed/2GyFm0V624M" title="Jerry Seinfeld Rants About Left-Handed Struggle! #Whatsthedeal #classiccomedy #1980s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div><hr><hr>
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-5-25 9:20AM</p>
-  <p style="font-size: 20px;">Here's Your Sunday Morning Short Video</p>
-<iframe width="547" height="973" src="https://www.youtube.com/embed/gOYt_oEmJPA" title="The President Posted This" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div><hr><hr>
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-4-25 9:00PM</p>
-  <p style="font-size: 20px;">Nope I Don't Think I Can</p>
-  <iframe width="547" height="973" src="https://www.youtube.com/embed/Qem_29FVGOk" title="ginnico  / Organic House, Downtempo, Anatolia, Chill,Oriental]" frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"   allowfullscreen></iframe>
-</div><hr><hr>
-
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-4-25 NoonPM</p>
-  <p style="font-size: 20px;">Ho Lee Shit. Chicago Be Poppin Off</p>
-  <a href="https://www.thegatewaypundit.com/2025/10/federal-agents-boxed-ambushed-10-cars-chicago-forced/" target="_blank"><span style=color:red; font-size: 25px;>
-  <b><i>Federal Agents Boxed in and Ambushed by 10 Cars in Chicago, Forced to Fire Defensive Rounds Against Armed Attacker</i></b></a>
-  <p>Wow, looks like Chicago is gettin serious. Wasn't the national guard deployed there already?<br><br>
-  And geez louise, what's with the police refusing to help
-  the federal agents?  Isn't that a violation of their law? Of federal law?<br><br>
-  Hope ole j b gets to talk to the federal DA about this one. Fornicate him.
-</div><hr><hr>
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-4-25 8:05AM</p>
-  <p style="font-size: 20px;">Saturday Morning Memes</p>
-  <img src=".\Image Folder\oct2025\10-4-25\one.jpg" width="350" height="350">
-  <img src=".\Image Folder\oct2025\10-4-25\two.jpg" width="350" height="350">
-  <img src=".\Image Folder\oct2025\10-4-25\three.jpg" width="350" height="350">
-  <img src=".\Image Folder\oct2025\10-4-25\four.jpg" width="350" height="350">
-</div><hr><hr>
-
-
-
-<div class="main">
- <p style="font-size: 15px;">Posted by Fred Horn 10-3-25 11:00AM</p>
- <p style="font-size: 25px;">Government Job</p>
- <iframe width="547" height="973" src="https://www.youtube.com/embed/dqtZbg1bl1g" title="FUNNY JOKE 🙄🤣" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div><hr><hr>
-
-
-<div class="main">
-  <p style="font-size: 15px;">Posted by Fred Horn 10-3-25 10:00AM</p>
-  <p style="font-size: 25px;">Go Read This Post Over at Cold Fury</p>
-  <a href="https://coldfury.com/wp/2025/10/03/make-the-military-great-again/" target="_blank"><span style=color:red; font-size: 25px;><b><i>Make The Military Great   Again</i></b></a>
-<p>Mike over there wrote a great article. This is how most of us here in this country feel. Well, at least about 80 million of us.</p>
-</div><hr><hr>
-
-
-<div class="main">
-  <p style="font=size: 15px;">Posted by Fred Horn 10-3-25 9:15AM</p>
-  <p style="font-size: 25px;">Have Some Friday Morning Memes</p>
-  <img src=".\Image Folder\oct2025\10-3-25\one.jpg" width="350px" height="350px">
-  <img src=".\Image Folder\oct2025\10-3-25\two.jpg" width="350px" height="350px">
-  <img src=".\Image Folder\oct2025\10-3-25\three.jpg" width="350px" height="350px">
-  <img src=".\Image Folder\oct2025\10-3-25\four.jpg" width="350px" height="350px">
-  <img src=".\Image Folder\oct2025\10-3-25\five.jpg" width="350px" height="350px">
-</div><hr><hr>
-
-
-<div class="main">
-<p style="font-size: 15px;">Posted by Fred Horn 10-2-25 8:45AM</p>
-<p style="font-size: 25px;">Have Some Morning Memes</p>
-  <img src=".\Image Folder\oct2025\10-2-25\one.jpg" width="350px" height="350px">
-  <img src=".\Image Folder\oct2025\10-2-25\two.jpg" width="350px" height="350px">
-  <img src=".\Image Folder\oct2025\10-2-25\three.jpg" width="350px" height="350px">
-  <img src=".\Image Folder\oct2025\10-2-25\four.jpg" width="350px" height="350px">
-</div><hr><hr>
-
-<div class="main">
-<p style="font-size: 15px;">Posted by Fred Horn 10-1-25 8:30AM</p>
-<p style="font-size: 25px;">A Few of Pete Hegseth's Remarks to the Generals</p>
-
-<p>&nbsp;<span style="font-size: large;">Return back to the male standards. No more beards. No more fat people.</span></p><p><span style="font-size: large;">I have long thought that our military should be mandated for each person to carry a weapon while they are on base. Infantry, motorpool, secretary, doctor, all of them.&nbsp; And they should train with those weapons weekly.</span></p><p><span style="font-size: large;">That's why they are in the military, to break things and blow stuff up, right?&nbsp;</span></p><p><span style="font-size: large;">Everybody carrying a weapon means no more muslims shooting them without getting shot at in return.</span></p><p><span style="font-size: large;">The airborne should be jumping out of planes at least every other week instead of every 3 to 6 months.</span></p><p><span style="font-size: large;">Our ships should be holding General Quarters drills every week. My ship only held them infrequently. TEACH the sailors how to do Damage Control, instead of yelling at them.</span></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ubI2ajELvVA?si=fmnk6FZuG-JAN830" title="YouTube video player" width="560"></iframe>
-</div><hr><hr>
-
-<div class="main">
-<p style="font-size: 15px;">Posted by Fred Horn 9-30-25 5:15PM</p>
-<p style="font-size: 25px;">Megyn Kelly on Pete Hegseth</p>
-<iframe width="547" height="973" src="https://www.youtube.com/embed/I9c145WF71c" title="&quot;I Love Him!&quot;: Megyn Kelly Praises Pete Hegseth&#39;s Powerful Message to Military Leaders" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<div><hr><hr>
-
-<div class="main">
-<p style="font-size: 15px;">Posted by Fred Horn 9-30-25 12:30PM</p>
-<p style="font-size: 25px;">Pete Hegseth Says We Are Returning to High Male Standards</p>
-<iframe width="547" height="973" src="https://www.youtube.com/embed/Qai3u6GLaZM" title="Megyn Kelly Reacts to Sec. Pete Hegseth Calling Out &quot;Fat&quot; Generals and Troops in Major Address" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</div><hr><hr>
-
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-30-25 11:00AM</p>
- <p style="font-size: 25px;">Looks Like Draining the Swamp Continues</p>
-  <p>&nbsp;<a href="https://www.thegatewaypundit.com/2025/09/100000-federal-employees-expected-quit-largest-exodus-u/" target="_blank"><span style="color: red; font-size: 25px;"><b><i>Over 100,000 Federal Employees Expected to Quit Tuesday Amid Government Shutdown — Largest Exodus in U.S. History as Trump Moves to Finally Drain the Swamp</i></b></span></a></p>
- <p style="font-size: 20px;"> This may be a good thing. This may not be a good thing.<br><br>
-
-I am ambivalent about this one. In other words, I don't know how I feel about this.<br><br>
-
-The article says about 275,000 people will lose their jobs. <br><br>
-
-"The total number of expected departures through the delayed resignation and voluntary separation programs, attrition, and early retirement programs is about 275,000 employees, the spokesman said."<br><br>
-
-That's a lot of jobs. I wonder how many of those will be looking to replace those jobs.<br><br>
-
-Now don't get me wrong, reducing government is a very good thing. I just hope government doesn't have to bail a bunch of them out while they whine they can no longer work.
-
-
-</div><hr><hr>
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-30-25 9:00AM</p>
- <p style="font-size: 25px;">Does a .Gov Shutdown Matter? Yawn.</p>
- <p style="font-size: 20px;">I went to search.brave.com and did a search for "looming gov shutdown." This is what came up.<br><br>
-The U.S. federal government is on the brink of a shutdown as the deadline of October 1, 2025, approaches without a funding agreement in place. With Congress unable to pass any of the 12 required appropriations bills or a short-term continuing resolution, a full government shutdown is increasingly likely. Republicans, who control both chambers of Congress, are pushing for a "clean" stopgap measure to extend funding for seven weeks, while Democrats are demanding the inclusion of key provisions such as an extension of enhanced Affordable Care Act premium tax credits and a rollback of Medicaid cuts from Trump’s One Big Beautiful Bill Act.<br><br>
-
-President Donald Trump has escalated the standoff, canceling a meeting with top Democratic leaders and stating that a shutdown "will have to shut down" if Democrats do not cooperate. Vice President JD Vance echoed this sentiment, saying, “I think we’re headed to a shutdown,” after a fruitless meeting between congressional leaders and the President. The Senate requires 60 votes to pass a funding bill, meaning Republicans need at least seven Democratic senators to support their measure—a threshold that currently appears unmet.<br><br>
-
-In a significant departure from past shutdowns, the Trump administration’s Office of Management and Budget (OMB) has directed federal agencies to prepare not only for furloughs but also for permanent mass layoffs of workers in programs deemed inconsistent with the administration’s priorities. This marks a sharp escalation, as previous shutdowns typically resulted in temporary furloughs with retroactive pay once operations resumed. The OMB has not posted updated agency contingency plans on its website, instead requiring agencies to host them independently, which complicates public assessment of essential functions.<br><br>
-
-Essential services such as Social Security, Medicare, Medicaid, military operations, air traffic control, and border security are expected to continue, though with potential strain. Social Security payments will not be interrupted, and veterans’ medical care and benefits processing will remain operational, although some support services like the GI Bill Hotline would be suspended. The IRS may continue operations using funds from the Inflation Reduction Act, potentially avoiding disruptions to tax processing.<br><br>
-
-However, non-essential services would face significant disruptions. National parks may close or operate without services, as seen in past shutdowns, though some states like Utah, Arizona, and Colorado have previously used state funds to keep parks open. Economic impacts could be substantial: the Bureau of Labor Statistics’ September jobs report, scheduled for October 3, would be delayed, as would the Consumer Price Index and other key data. Financial markets rely on these reports, and delays could create uncertainty.<br><br>
-
-Economists warn that even a short shutdown could slow economic growth, and a prolonged one could cause lasting damage. The 2018–2019 shutdown cost the economy an estimated $3 billion and reduced tax revenues by $2 billion due to reduced IRS enforcement. The US Travel Association estimates a shutdown could cost $1 billion per week in lost travel activity.<br><br>
-
-Federal workers would bear the brunt of the shutdown. Hundreds of thousands could be furloughed without immediate pay, while "excepted" employees would be required to work without guaranteed timely compensation. Although federal workers typically receive back pay after a shutdown ends, federal contractors do not. The Defense Department has warned active-duty military personnel they will not be paid after September 30 until funding is restored, though they must continue reporting for duty.<br><br>
-
-Given the current impasse and the administration’s willingness to accept a shutdown as a tool for reducing the federal workforce, the situation represents a more serious and potentially longer-lasting crisis than previous budget standoffs.<br><br>
-
-Fuck the .gov.</p>
-
-</div><hr><hr>
-
-<div class="main" style="font-size: 15px;">Posted by Fred 9-30-25 8:30AM</p>
-  <p style="font-size: 25px;">Morning Humor</p>
-  <p style="font-size: 20px;"> A guy had a surgery to go from being a man to being a woman.
-
-I asked the guy, "Of all the things they cut, what hurt the most?"
-
-He replied, "The salary."<br><br>
-
-
-
-I turned in the guy who shot the united healthcare ceo, and wouldn't
-
- you know it. They just refused to approve my surgery.
-
-Just goes to show, snitches don't get stitches.<br><br>
-
-
-
-I couldn't decide whether to go to Salt Lake City or Denver for vacation, so I called the airlines to get prices. Airfare to Denver is $300 the nice lady said. 
-
-And what about Salt Lake City?
-
-She said we have a really great rate to Salt Lake City, only $99, but there is a layover.
-
-Where, I asked.
-
-She said, Denver.</p>
-</div><hr><hr>
-
- 
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-29-25 8:30AM</p>
-  <p style="font-size: 25px;">Good Monday Morning Memes</p>
-  <img src=".\Image Folder\sept2025\9-29-25\one.jpg" width="350" height="350">
-  <img src=".\Image Folder\sept2025\9-29-25\two.jpg" width="350" height="350">
-  <img src=".\Image Folder\sept2025\9-29-25\three.jpg" width="350" height="350">
-  <img src=".\Image Folder\sept2025\9-29-25\four.jpg" width="350" height="350">
-</div><hr><hr>
-
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-28-25 6:45AM</p>
- <p style="font-size: 25px;">Early Morning Memes</p>
- <img src=".\Image Folder\sept2025\9-28-25\one.jpg" width="350" height="350">
- <img src=".\Image Folder\sept2025\9-28-25\two.jpg" width="350" height="350">
- <img src=".\Image Folder\sept2025\9-28-25\three.jpg" width="350" height="350">
- <img src=".\Image Folder\sept2025\9-28-25\four.jpg" width="350" height="350">
-</div>
-<hr><hr>
-
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-27-25 7:00PM</p>
-<p style="font-size: 25px;">Is it "whoever" or "whomever"???</p>
-<p><i>&nbsp;<span style="font-size: large;">Two crows were in a field when they noticed a figure in the distance that looked like a man.</span></i></p><p><span style="font-size: large;"><i>"What is that?" says the first crow.</i></span></p><p><span style="font-size: large;"><i>The second crow takes a long look.</i></span></p><p><span style="font-size: large;"><i>"That's a scarecrow. Looks authentic, doesn't it?"</i></span></p><p><span style="font-size: large;"><i>"How can you tell it's a scarecrow?" asked the first crow.</i></span></p><p><span style="font-size: large;"><i>The second crow says, "Look at it's hand. No mobile phone."</i></span></p><p><span style="font-size: large;"><i><br /></i></span></p><p><span style="font-size: large;"><b>Two kids were arguing when the teacher entered the room.</b></span></p><p><span style="font-size: large;"><b>Teacher says, "Why are you arguing?"</b></span></p><p><span style="font-size: large;"><b>First boy answers and says, "We found a ten dollar bill and decided to give it to whoever tells the biggest lie."</b></span></p><p><span style="font-size: large;"><b>"You should be ashamed of yourselves." said the teacher.</b></span></p><p><span style="font-size: large;"><b>"When I was your age I didn't even know what a lie was!"</b></span></p><p><span style="font-size: large;"><b>The boys gave the ten dollars to the teacher!</b></span></p>
-</div><hr><hr>
-
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-27-25 9:00AM</p>
-<p style="font-size: 25px;">Good Saturday Morning</p>
-<div style="text-align: center;">
-  <img src=".\Image Folder\sept2025\9-27-25\three.jpg" style="img" width="366" height="480"><br>
-  <img src=".\Image Folder\sept2025\9-27-25\one.jpg" style="img" width="400" height="400"><br>
-  <img src=".\Image Folder\sept2025\9-27-25\two.jpg" style="img" width="400" height="400"><br>
-</div><hr><hr>
-
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-26-25 10:15AM</p>
-<p style="font-size: 25px;">Good Morning</p>
-<div style="text-align: center;">
-  <img src=".\Image Folder\sept2025\9-26-25\giphy.gif" style="img" width="366" height="480"><br>
-  <img src=".\Image Folder\sept2025\9-26-25\one.jpg" style="img" width="400" height="400"><br>
-  <img src=".\Image Folder\sept2025\9-26-25\two.jpg" style="img" width="400" height="400"><br>
-</div><hr><hr>
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-25-25 10:30AM</p>
-<p style="font-size: 25px;">Mid Morning Memes</p>
-<div style="text-align: center;">
- <img src=".\Image Folder\sept2025\9-25-25\one.jpg" style="img" width="400" height="400"><br>
- <img src=".\Image Folder\sept2025\9-25-25\two.jpg" style="img" width="400" height="400"><br>
- <img src=".\Image Folder\sept2025\9-25-25\three.jpg" style="img" width="400" height="400"><br>
- <img src=".\Image Folder\sept2025\9-25-25\four.jpg" style="img" width="400" height="400">
-</div><hr><hr>
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-25-25 9:30AM</p>
-<p style="font-size: 20px;">Holy Shit. Take the Tylenol Challenge a Little Too Far?</p><br>
-<p style="font-size: 20px;">Tweet borrowed from <a href="https://ncrenegade.com/" target="_blank" style="color: red"><b><i>NC Renegade</i></b></a></p>
-<div style="text-align: center;">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🚨 Pregnant liberal took so much Tylenol after hearing Donald Trump say it causes autism she’s now in the ICU and is going to die<br><br>Executive Director of American Frontline Nurses got a “very frantic call at 4am from a husband whose wife is now dying of liver failure on a… <a href="https://t.co/TtQqdF2bo1">pic.twitter.com/TtQqdF2bo1</a></p>&mdash; Wall Street Apes (@WallStreetApes) <a href="https://twitter.com/WallStreetApes/status/1971019653624496521?ref_src=twsrc%5Etfw">September 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<hr><hr>
- 
-
-<div class="main" style="font-size: 15px;">Posted by Fred Horn 9-24-25 7:30PM</p>
-  <p>Have a Little Johnny Joke</p>
-    <div style="text-align: center;"><iframe width="547" height="973" src="https://www.youtube.com/embed/S5rL-bfBGa4" title="#funny #jokes #memes #comedy #fyp #shorts #trending" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<hr><hr>
-
-  <div class="main" style="font-size: 15px;"> Posted by Fred Horn 9-24-25  1:30PM</p>
-  <div style="text-align: center;">
-  <img src=".\Image Folder\sept2025\9-24-25\one.jpg" style="img" width="400" height="400"><br>
-  <img src=".\Image Folder\sept2025\9-24-25\two.jpg" style="img" width="400" height="400"><br>
-  <img src=".\Image Folder\sept2025\9-24-25\three.jpg" style="img" width="400" height="400"><br>
-  <img src=".\Image Folder\sept2025\9-24-25\four.jpg" style="img" width="400" height="400">
-</div>
-
-  <hr><hr>
-  <div class="main"><p style="font-size: 15px;">Posted by Fred Horn 9-23-25</p>
-  <p>Keith Olbermann Backpedals With Apology for Threatening CNN’s Scott Jennings</p><a href="https://www.thegatewaypundit.com/2025/09/keith-olbermann-backpedals-furiously-apology-threatening-cnns-scott/" target="_blank" style="color: red"><b><i>Pisson Keith Olberman</i></b></a>
-<p>The left keeps on doublin down, don't they? This focking idiot Keith Olbermann? I thought he was gone away never to be seen again.<br><br>
-I have said before and I will say it again: This war won't be over until every cocksucker democrat is dead and making compost to raise feed for the animals.</p>
-</div><hr><hr>
-
-<div class="main"><p style="font-size: 15px;">Posted by Fred Horn 9-23-25</p>
-  <p>Monday, September 22, 2025<br><br>
-  Jimmy Kimmel to Return After Mere Six-Day Suspension Amid Charlie Kirk Assassination Outrage</p>
-  <a href="https://www.thegatewaypundit.com/2025/09/abc-caves-jimmy-kimmel-return-after-mere-six/" target="_blank" style="color: red">ABC Caves</a>
-  <p>Looks like little jimmah is unsuspended.
-
-Whoopti efffin do.<br><br>
-
-I'm surprised it lasted this long.<br><br>
-
-Question I got now is what are all of these affiliates gonna do? Are they gonna air the show?<br><br>
-
-Who knows? Maybe The Shadow do.<br><br>
-
-</div><hr><hr>
-<div class="main">
-<p style="font-size: 15px;">Posted by Fred Horn 9-23-25</p>
-
-<div style="text-align: center;">
-  <img src=".\Image Folder\sept2025\9-23-25\one.jpg" style="img" width="600" height="600">
-  <img src=".\Image Folder\sept2025\9-23-25\two.jpg" style="img" width="600" height="600">
-  <img src=".\Image Folder\sept2025\9-23-25\three.jpg" style="img"  width="600" height="600">
-  <img src=".\Image Folder\sept2025\9-23-25\four.jpg" style="img" width="600" height="600">
-  <img src=".\Image Folder\sept2025\9-23-25\five.jpg" style="img" width="600" height="600">
-</div>
-
-<div class="sidenav">
+</main>
+  
+   <section class="left-sidebar">Left sidebar</section>
+   <div class="left-sidebar" style="text-align: center">
 
  <a href='https://www.free-counters.org/'>free-counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c6a012d465d98f41788f5d08f29d297b37ed837b'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1400173/t/0"></script>
 
  <p>Stories to Read</p>
-  <a href="https://www.timebomb2000.com/xf/index.php?threads/up-on-hartford-ridge.614960/" target="_blank">Up On Hartford Ridge</a>
-  <a href="https://xtexanwannabe.wordpress.com/2013/11/05/it-could-happen-2/" target="_blank">It Could Happen(by ExTexan)</a>
+  <a href="https://www.timebomb2000.com/xf/index.php?threads/up-on-hartford-ridge.614960/" target="_blank">Up On Hartford Ridge</a><br>
+  <a href="https://xtexanwannabe.wordpress.com/2013/11/05/it-could-happen-2/" target="_blank">It Could Happen(by ExTexan)</a><br>
   
 <p>Links</p>
-  <a href="https://75mpop.blogspot.com/" target="_blank"> 75 Million Pissed Off Patriots</a>
-  <a href="https://ninetymilesfromtyranny.blogspot.com/" target="_blank">90 Miles from Tyranny</a>
-  <a href="https://bustednuckles.com/" target="_blank">Busted Nuckles</a>
-  <a href="https://commoncts.blogspot.com/" target="_blank">Common Cents</a>
-  <a href="https://johnsimonds.com/" target="_blank">John Simonds</a>
-  <a href="https://eatonrapidsjoe.blogspot.com/" target="_blank">Eaton Rapids Joe</a>
-  <a href="https://extexanwannabee.wordpress.com/" target="_blank">ExTexanWannabe</a>
-  <a href="https://funnypix.altervista.org/" target="_blank">FunnyPix</a>
-  <a href="https://elmtreeforge.blogspot.com/" target="_blank">Irons in the Fire</a>
-  <a href="https://sondraksgulch.com/" target="_blank">SondraK</a>
-  <a href="https://proof-proofpositive.blogspot.com/" target="_blank">Proof Positive</a>
-  <a href="https://sratchingtoescape.blogspot.com/" target="_blank">Scratching to Escape</a>
-  <a href="https://theferalirishman.blogspot.com/" target="_blank">Feral Irishman</a>
-  <a href="https://www.thegatewaypundit.com/" target="_blank">Gateway Pundit</a>
-  <a href="https://theviewfromladylake.blogspot.com/" target="_blank">View from Lady Lake</a>
+  <a href="https://75mpop.blogspot.com/" target="_blank"> 75 Million Pissed Off Patriots</a><br>
+  <a href="https://ninetymilesfromtyranny.blogspot.com/" target="_blank">90 Miles from Tyranny</a><br>
+  <a href="https://bustednuckles.com/" target="_blank">Busted Nuckles</a><br>
+  <a href="https://commoncts.blogspot.com/" target="_blank">Common Cents</a><br>
+  <a href="https://johnsimonds.com/" target="_blank">John Simonds</a><br>
+  <a href="https://eatonrapidsjoe.blogspot.com/" target="_blank">Eaton Rapids Joe</a><br>
+  <a href="https://extexanwannabee.wordpress.com/" target="_blank">ExTexanWannabe</a><br>
+  <a href="https://funnypix.altervista.org/" target="_blank">FunnyPix</a><br>
+  <a href="https://elmtreeforge.blogspot.com/" target="_blank">Irons in the Fire</a><br>
+  <a href="https://sondraksgulch.com/" target="_blank">SondraK</a><br>
+  <a href="https://proof-proofpositive.blogspot.com/" target="_blank">Proof Positive</a><br>
+  <a href="https://sratchingtoescape.blogspot.com/" target="_blank">Scratching to Escape</a><br>
+  <a href="https://theferalirishman.blogspot.com/" target="_blank">Feral Irishman</a><br>
+  <a href="https://www.thegatewaypundit.com/" target="_blank">Gateway Pundit</a><br>
+  <a href="https://theviewfromladylake.blogspot.com/" target="_blank">View from Lady Lake</a><br>
   <a href="https://bustednuckles.blogspot.com/" target="_blank">The Vulgar Curmudgeon</a> <br><br>
 
 <p>Some Other Links for You to Pursue</p>
-  <a href="https://www.ammoland.com/" target="_blank">AmmoLand</a>
-  <a href="https://www.foodsafetynews.com/" target="_blank">Food Safety News</a>
-  <a href="https://knifeinformer.com/" target="_blank">Knife Informer</a>
-  <a href="https://www.weather.gov/" target="_blank">National Weather Service</a>
+  <a href="https://www.ammoland.com/" target="_blank">AmmoLand</a><br>
+  <a href="https://www.foodsafetynews.com/" target="_blank">Food Safety News</a><br>
+  <a href="https://knifeinformer.com/" target="_blank">Knife Informer</a><br>
+  <a href="https://www.weather.gov/" target="_blank">National Weather Service</a><br>
   <a href="https://constitutioncenter.org/the-constitution/full-text" target="_blank">United States Constitution</a><br><br>
+</div>
+   
+   
+   
+    <aside class="right-sidebar" style="text-align: center">
+		<img src=".\imagefolder\sidebarpics\one.jpg" style="width: 60%" ><br><br>
+		<img src=".\imagefolder\sidebarpics\two.jpg" style="width: 60%" ><br><br>		
+		<img src=".\imagefolder\sidebarpics\three.jpg" style="width: 60%" ><br><br>
+		<img src=".\imagefolder\sidebarpics\four.jpg" style="width: 60%" ><br><br>
+		<img src=".\imagefolder\sidebarpics\five.jpg" style="width: 60%" ><br><br>
+		<img src=".\imagefolder\sidebarpics\six.jpg" style="width: 60%" ><br><br>
+		<img src=".\imagefolder\sidebarpics\seven.jpg" style="width: 60%" ><br><br>
+	</aside>
+
+
+	
+	
+	
+	
+    <footer class="footer">Footer</footer>
 </div>
 
 
-   
 </body>
-</html> 
+</html>
